@@ -1,0 +1,79 @@
+/*	.icon
+	intented for use in 100x100px tile
+	for .high and .wide , use .image instead
+*/
+.tile.icon div{
+    
+}
+	/*
+		the icon is in the form of this:
+	
+		.tile.icon.icDEMO div{
+			background-image: url('');
+		}
+	*/
+	
+	/* above is all icon file */
+	
+/* end of icon */
+
+
+
+/*	.image
+	intended for .high and .wide
+	tile.high div = 100x210px
+	tile.wide div = 210x100px
+	
+	image should, and highly recommand
+	.high , width =100px , height <=210px
+	.wide , width =210px , height <=100px
+*/
+.tile.image div{
+	background-position: 0px 0px;
+}
+	
+	/* .image pre-setup */
+	.tile.image.wide div{ background-size: 210px auto; }
+	.tile.image.high div{ background-size: 100px auto; }
+	.tile.image a>div p:last-child{ font-size: 30px; }
+	/* end of pre-setup */
+	
+	
+	/*
+		the image is in the form of this:
+
+		.tile.image.imDEMO div{
+			background-image: url('');
+		}
+	*/
+	
+	/* above is image file */
+	
+/* end of image */
+
+/* 
+	all no notification number tile
+*/
+.tile.nonum div{
+	background-position: center center;
+	background-size: 85px 85px;
+}
+
+	.tile.nonum.high div{ background-position: 0px 0px; }
+	.tile.nonum.wide div{ /* this works.. */ }
+	
+/* end of all no notification tile */
+	
+/*	
+	I FAIL in this part....
+	for those no image
+	make noti num center
+
+.tile.noimg div{
+	
+}
+
+	.tile.noimg a>div p:last-child{ 
+		
+	}
+*/

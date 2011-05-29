@@ -1,0 +1,67 @@
+.tile{
+    display: inline;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+    .tile a,
+    .tile a:hover,
+    .tile a:visited,
+    .tile a:active{
+        float: left;
+        text-decoration: none;
+        color: white;
+    }
+
+    .tile div{
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 5px; /* mark here , need tweak */
+        position: relative;
+        background-color: #1ba1e2;
+        background-position: 5px center;
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        -moz-transition: all 0.2s ease-out;  /* FF4+ */
+        -o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
+        -webkit-transition: all 0.2s ease-out;  /* Saf3.2+, Chrome */
+        -ms-transition: all 0.2s ease-out;  /* IE10? */
+        transition: all 0.2s ease-out;
+    }
+    
+    .tile div:hover{ background-color: #00ABA9; }
+
+    .tile div:active{ background-color: black; }
+    
+    .tile a>div p:first-child,
+    .tile a>div p:last-child{
+        position: absolute;
+        font-family: 'Josefin Sans', Arial, sans-serif;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        border: none;
+        line-height: normal;
+    }
+    
+    .tile a>div p:first-child{
+        bottom: 0px;
+        left: 3px;
+        font-size: 17px;
+    }
+
+    .tile a>div p:last-child{
+        right: 5px;
+        bottom: 35px;
+        font-size: 35px;
+    }
+
+.tile.wide div{ width: 210px; }
+
+.tile.high div{ height: 210px; }
+
+    .tile.wide a>div p:last-child,
+    .tile.high a>div p:last-child{
+            top: auto; right: 5px; bottom: -3px;
+    }
