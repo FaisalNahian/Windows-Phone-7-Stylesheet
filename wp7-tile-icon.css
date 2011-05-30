@@ -12,12 +12,6 @@
 			background-image: url('');
 		}
 	*/
-	
-	/* above is all icon file */
-	
-/* end of icon */
-
-
 
 /*	.image
 	intended for .high and .wide
@@ -36,9 +30,7 @@
 	.tile.image.wide div{ background-size: 210px auto; }
 	.tile.image.high div{ background-size: 100px auto; }
 	.tile.image a>div p:last-child{ font-size: 30px; }
-	/* end of pre-setup */
-	
-	
+
 	/*
 		the image is in the form of this:
 
@@ -46,10 +38,6 @@
 			background-image: url('');
 		}
 	*/
-	
-	/* above is image file */
-	
-/* end of image */
 
 /* 
 	all no notification number tile
@@ -60,13 +48,12 @@
 }
 
 	.tile.nonum.high div{ background-position: 0px 0px; }
-	.tile.nonum.wide div{ /* this works.. */ }
+	/*.tile.nonum.wide div{ }*/
 	
-/* end of all no notification tile */
 	
 /*	
 	I FAIL in this part....
-	for those no image
+	for those no image tile to
 	make noti num center
 
 .tile.noimg div{

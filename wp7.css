@@ -1,3 +1,7 @@
+/*
+ * use for <li class="tile">..</li>
+ * which mean one li = one tile.
+ */
 .tile{
     display: inline;
     float: left;
@@ -9,7 +13,6 @@
     .tile a:hover,
     .tile a:visited,
     .tile a:active{
-        float: left;
         text-decoration: none;
         color: white;
     }
@@ -17,11 +20,9 @@
     .tile div{
         width: 100px;
         height: 100px;
-        margin: 5px 5px 5px 5px; /* mark here , need tweak */
+        margin: 5px 5px 5px 5px;
         position: relative;
-        background-color: #1ba1e2;
-        background-position: 5px center;
-        background-repeat: no-repeat;
+        background: #1ba1e2 no-repeat 5px center;
         background-size: 50px 50px;
         -moz-transition: all 0.2s ease-out;  /* FF4+ */
         -o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
@@ -30,10 +31,16 @@
         transition: all 0.2s ease-out;
     }
     
+    /* the color of the tile when you... you know.. hovering */
     .tile div:hover{ background-color: #00ABA9; }
-
+	
+	/* the color of the tile when you clicking the tile */
     .tile div:active{ background-color: black; }
     
+    /*
+     * first-child is the Tile Name
+     * last-child  is the Notification Number
+     */
     .tile a>div p:first-child,
     .tile a>div p:last-child{
         position: absolute;
